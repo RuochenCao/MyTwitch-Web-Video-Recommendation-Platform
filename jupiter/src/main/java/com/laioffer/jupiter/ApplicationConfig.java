@@ -25,8 +25,8 @@ public class ApplicationConfig {
     @Bean(name = "dataSource")
     public DataSource dataSource() {
         String RDS_ENDPOINT = "laiproject-instance.cissjj6wmjlp.us-west-1.rds.amazonaws.com";
-        String USERNAME = "admin";
-        String PASSWORD = "2981516cao";
+        String USERNAME = "";
+        String PASSWORD = "";
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://" + RDS_ENDPOINT + ":3306/twitch?createDatabaseIfNotExist=true&serverTimezone=UTC");
